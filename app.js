@@ -2,10 +2,10 @@ const request = require('request')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
 
-// geocode('Kolkata India', (error, data) => {
-//     console.log('Error', error)
-//     console.log('Data', data)
-// })
+geocode('Delhi India', (error, data) => {
+    console.log('Error', error)
+    console.log('Data', data)
+})
 
 forecast(-75.7088, 44.1545, (error, data) => {
     console.log('Error', error)
